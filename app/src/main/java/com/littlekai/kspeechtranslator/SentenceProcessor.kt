@@ -13,8 +13,6 @@ import org.json.JSONObject
 class SentenceProcessor(private val context: Context, private var geminiApiKey: String) {
     private val TAG = "SentenceProcessor"
     private val client = OkHttpClient()
-//    private var geminiApiKey =
-//        "AIzaSyAxfaDXqfJESn-UiV_PrILhihyvFU6QkGw" // Replace with your actual Gemini API key
     private val geminiApiUrl =
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 
