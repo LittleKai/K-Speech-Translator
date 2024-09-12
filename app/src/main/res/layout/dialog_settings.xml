@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum duration of speech input"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/minimumSpeechLengthEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minimum Speech Length (ms)"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration of silence to finalize input"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/completeSilenceLengthEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Complete Silence Length (ms)"
+            android:inputType="number" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration of possible silence before finalizing"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/possiblySilenceLengthEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Possibly Silence Length (ms)"
+            android:inputType="number" />
+
+
+        <CheckBox
+            android:id="@+id/processSentenceStructureCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process sentence structure"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/speakTranslatedSentenceCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speak translated sentence"
+            android:checked="false" />
+
+        <EditText
+            android:id="@+id/geminiApiKeyEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gemini API Key"
+            android:inputType="textVisiblePassword" />
+
+    </LinearLayout>
+</ScrollView>
